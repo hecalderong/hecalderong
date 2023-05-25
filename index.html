@@ -1,8 +1,268 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Portafolio Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HC Hugo Calderon Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-  <h1> pagina portafolio</h1>
+    <main>
+      <header id="header">
+        <div class="overlay overlay-lg">
+          <img src="./img/shapes/square.png" class="shape square" alt="" />
+          <img src="./img/shapes/circle.png" class="shape circle" alt="" />
+          <img
+            src="./img/shapes/half-circle.png"
+            class="shape half-circle1"
+            alt=""
+          />
+          <img
+            src="./img/shapes/half-circle.png"
+            class="shape half-circle2"
+            alt=""
+          />
+          <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+          <img src="./img/shapes/wave.png" class="shape wave wave1" alt="" />
+          <img src="./img/shapes/wave.png" class="shape wave wave2" alt="" />
+          <img src="./img/shapes/triangle.png" class="shape triangle" alt="" />
+          <img src="./img/shapes/letters.png" class="letters" alt="" />
+          <img src="./img/shapes/points1.png" class="points points1" alt="" />
+        </div>
+
+        <nav>
+          <div class="container">
+            <div class="logo">
+              <img src="./img/logo.png" alt="" />
+            </div>
+
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="#header">Home</a>
+                </li>
+                  <a href="#about">Sobre mi</a>
+                </li>
+                <li>
+                  <a href="#testimonials">Portafolio</a>
+                </li>
+                <li>
+                  <a href="#hireme" class="active">Contactame</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-content">
+          <div class="container grid-2">
+            <div class="column-1">
+              <h1 class="header-title">Hugo Calderon</h1>
+              <p class="text">
+                Desarrollador Senior FullStack<br>Mis principales competencias son la arquitectura de proyectos, la consultoría y el desarrollo de software centrado, sobre todo, en aplicaciones iOS, Android y web.
+                Poseo conocimientos sobre diseño gráfico y corporativo, los cuales aplico a la creación de UI y UX en mis aplicaciones, webs<br>
+                
+              </p>
+              <a href="https://www.linkedin.com/in/developerHCode/" class="btn" target="_blank">Hecha un vistaso a mi CV</a>
+            </div>
+
+            <div class="column-2 image">
+              <img
+                src="./img/shapes/points2.png"
+                class="points points2"
+                alt=""
+              />
+              <img src="./img/person.png" class="img-element z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Conversemos">Acerca de mi perfil técnico</h3>
+          </div>
+
+          <div class="section-body grid-2">
+            <div class="column-1">
+              <h3 class="title-sm"></h3>
+              <p class="text">
+                Especialista en Desarrollo de Software, programas, Apps y mantenimiento de sistemas con más de 15 años de experiencia. Conocimiento avanzado en distintos lenguajes de programación. Capacitado para trabajar en todas las etapas del desarrollo de programas. Con iniciativa propia, responsabilidad y liderazgo.
+Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; conocimientos sólidos en tecnologías web como HTML, CSS, JavaScript y frameworks como Spring, Hibernate, AngularJS, React Native; manejadores de contenido como liferay, wordpress, joomla y drupal; desarrollador iOS; conocimientos sólidos en Swift y herramientas como Xcode, Interface Builder y Cocoa Touch; conocimientos avanzados en bases de datos relacionales y no relacionales como MySQL, PSQL, MongoDB, Cassandra etc. y almacenamiento local, así como en la integración de servicios web y redes sociales; además con habilidades en metodologías ágiles y en la gestión de proyectos.</p>
+              
+              <a href="https://www.linkedin.com/in/developerHCode/" class="btn" target="_blank">Leer mas</a>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/shapes/points4.png" class="points" alt="" />
+              <img src="./img/about.png" class="z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="records">
+        <div class="overlay overlay-sm">
+          <img src="./img/shapes/square.png" alt="" class="shape square1" />
+          <img src="./img/shapes/square.png" alt="" class="shape square2" />
+          <img src="./img/shapes/circle.png" alt="" class="shape circle" />
+          <img
+            src="./img/shapes/half-circle.png"
+            alt=""
+            class="shape half-circle"
+          />
+          <img src="./img/shapes/wave.png" alt="" class="shape wave wave1" />
+          <img src="./img/shapes/wave.png" alt="" class="shape wave wave2" />
+          <img src="./img/shapes/x.png" alt="" class="shape xshape" />
+          <img src="./img/shapes/triangle.png" alt="" class="shape triangle" />
+        </div>
+
+        <!--div class="container">
+          <div class="wrap">
+            <div class="record-circle">
+              <h2 class="number" data-num="235">20</h2>
+              <h4 class="sub-title">Años de experiencia</h4>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="record-circle active">
+              <h2 class="number" data-num="174">10</h2>
+              <h4 class="sub-title"></h4>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="record-circle">
+              <h2 class="number" data-num="892">1220</h2>
+              <h4 class="sub-title">Work Hour</h4>
+            </div>
+          </div>
+
+          <div class="wrap">
+            <div class="record-circle">
+              <h2 class="number" data-num="368">0</h2>
+              <h4 class="sub-title">Awards</h4>
+            </div>
+          </div>
+        </div-->
+      </section>
+      
+
+      <section class="testimonials section" id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Algunas cosas creativas en mi">Portafolio</h3>
+          </div>
+
+          <div class="testi-content grid-2">
+            <div class="column-1 reviews">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      por aca podras encontrar algunos de mis proyectos 
+                    </p>
+                    <a href="https://github.com/hecalderong" class="btn" target="_blank">Hecha un vistaso a mi GitHub</a>
+                    
+                  </div>
+                </div>
+
+                  
+
+                <div class="review-nav swiper-button-prev">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                </div>
+                <div class="review-nav swiper-button-next">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/testi.png" alt="" class="img-element" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hireme" id="hireme">
+        <div class="container">
+          <h3 class="title"> ¿HABLAMOS?</h3>
+          <p class="text">
+            COMO FREELANCE, MI LUGAR DE TRABAJO ES VARIABLE.<br>  
+            Siempre estoy abierto a discutir el trabajo de diseño prototipado y desarrollo de productos digitales o las oportunidades de asociación.
+          </p>
+          <a href="https://t.me/hecalderong" class="btn" target="_blank">Contactame</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+              Copyright&copy;2020 HC Highlights Coders  
+            </p>
+          </div>
+
+          <div class="followme-wrap">
+            <div class="followme">
+              <h3>Sigueme en: </h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a href="https://t.me/hecalderong" target="_blank">
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://twitter.com/developer_hcode" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/hecalderong" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/developerHCode/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="back-btn-wrap">
+              <a href="#" class="back-btn">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
