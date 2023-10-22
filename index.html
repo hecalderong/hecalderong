@@ -3,266 +3,1081 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HC Hugo Calderon Portfolio Website</title>
+    <meta
+      name="description"
+      content="Sitio web del portafolio de Hugo Calderón HC. Un resumen de la experiencia profesional,
+      habilidades, detalles de proyectos e información de contacto."
+    />
+    <title>Hugo Calderón HC Portafolio Website</title>
+
+    <!--==================== OPEN GRAPH META TAGS ===================== -->
+    <meta property="og:title" content="Hugo Calderón HC Portafolio Website" />
+    <meta property="og:image" content="/assets/img/PwaImages/ios/512.png" />
+    <meta
+      property="og:description"
+      content="Sitio web del portafolio de Hugo Calderón HC. Un resumen de la experiencia profesional,
+      habilidades, detalles de proyectos e información de contacto."
+    />
+
+    <!--==================== TWITTER META TAGS ===================== -->
+    <meta name="twitter:title" content="Hugo Calderón HC Portafolio Website" />
+    <meta
+      name="twitter:description"
+      content="Sitio web del portafolio de Hugo Calderón HC. Un resumen de la experiencia profesional,
+      habilidades, detalles de proyectos e información de contacto."
+    />
+    <meta name="twitter:image" content="/assets/img/PwaImages/ios/512.png" />
+
+    <!--==================== UNICONS ====================-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- ====================PWA================== -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/32.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/72.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/100.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/128.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/144.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/152.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/192.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/256.png" />
+    <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#6E57E0" />
+    <meta name="theme-color" content="#282533" />
+
+    <!-- ============FAVICONS============== -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/favicons/apple-touch-icon.png"
     />
     <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/favicons/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/img/favicons/favicon.ico"
+    />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
+
   <body>
-    <main>
-      <header id="header">
-        <div class="overlay overlay-lg">
-          <img src="./img/shapes/square.png" class="shape square" alt="" />
-          <img src="./img/shapes/circle.png" class="shape circle" alt="" />
-          <img
-            src="./img/shapes/half-circle.png"
-            class="shape half-circle1"
-            alt=""
-          />
-          <img
-            src="./img/shapes/half-circle.png"
-            class="shape half-circle2"
-            alt=""
-          />
-          <img src="./img/shapes/x.png" class="shape xshape" alt="" />
-          <img src="./img/shapes/wave.png" class="shape wave wave1" alt="" />
-          <img src="./img/shapes/wave.png" class="shape wave wave2" alt="" />
-          <img src="./img/shapes/triangle.png" class="shape triangle" alt="" />
-          <img src="./img/shapes/letters.png" class="letters" alt="" />
-          <img src="./img/shapes/points1.png" class="points points1" alt="" />
+    <!-- ===================== LOADER ==================== -->
+    <div id="loading">
+      <div class="loader"><span><</span>HC<span>/></span></div>
+    </div>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo noSelect">Hugo Calderón HC </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link noSelect active-link">
+                <i class="uil uil-estate nav__icon"></i> Inicio
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link noSelect">
+                <i class="uil uil-user nav__icon"></i> Acerca de
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link noSelect">
+                <i class="uil uil-file-alt nav__icon"></i> Experiencia
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#services" class="nav__link noSelect">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Servicios
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link noSelect">
+                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link noSelect">
+                <i class="uil uil-message nav__icon"></i> Contactame
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close noSelect" id="nav-close"></i>
         </div>
 
-        <nav>
-          <div class="container">
-            <div class="logo">
-              <img src="./img/logo.png" alt="" />
-            </div>
+        <div class="nav__btns">
+          <!-- theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-            <div class="links">
-              <ul>
-                <li>
-                  <a href="#header">Home</a>
-                </li>
-                  <a href="#about">Sobre mi</a>
-                </li>
-                <li>
-                  <a href="#testimonials">Portafolio</a>
-                </li>
-                <li>
-                  <a href="#hireme" class="active">Contactame</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="hamburger-menu">
-              <div class="bar"></div>
-            </div>
+          <div class="nav__toggle noSelect" id="nav-toggle">
+            <i class="uil uil-apps"></i>
           </div>
-        </nav>
+        </div>
+      </nav>
+    </header>
 
-        <div class="header-content">
-          <div class="container grid-2">
-            <div class="column-1">
-              <h1 class="header-title">Hugo Calderon</h1>
-              <p class="text">
+    <!--==================== MAIN ====================-->
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/developerHCode/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://github.com/hecalderong/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a
+                href="https://t.me/hecalderong"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-telegram-alt"></i>
+              </a>
+            </div>
+
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    y="-20"
+                    x="-20"
+                    xlink:href="img/person.png"
+                  ></image>
+                </g>
+              </svg>
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">Hugo Calderón</h1>
+              <h3 class="home__subtitle">Desarrollador Senior FullStack</h3>
+              <p class="home__description">
                 Desarrollador Senior FullStack<br>Mis principales competencias son la arquitectura de proyectos, la consultoría y el desarrollo de software centrado, sobre todo, en aplicaciones iOS, Android y web.
                 Poseo conocimientos sobre diseño gráfico y corporativo, los cuales aplico a la creación de UI y UX en mis aplicaciones, webs<br>
-                
               </p>
-              <a href="https://www.linkedin.com/in/developerHCode/" class="btn" target="_blank">Hecha un vistaso a mi CV</a>
-            </div>
-
-            <div class="column-2 image">
-              <img
-                src="./img/shapes/points2.png"
-                class="points points2"
-                alt=""
-              />
-              <img src="./img/person.png" class="img-element z-index" alt="" />
-            </div>
-          </div>
-        </div>
-      </header>
-      <section class="about section" id="about">
-        <div class="container">
-          <div class="section-header">
-            <h3 class="title" data-title="Conversemos">Acerca de mi perfil técnico</h3>
-          </div>
-
-          <div class="section-body grid-2">
-            <div class="column-1">
-              <h3 class="title-sm"></h3>
-              <p class="text">
-                Especialista en Desarrollo de Software, programas, Apps y mantenimiento de sistemas con más de 15 años de experiencia. Conocimiento avanzado en distintos lenguajes de programación. Capacitado para trabajar en todas las etapas del desarrollo de programas. Con iniciativa propia, responsabilidad y liderazgo.
-Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; conocimientos sólidos en tecnologías web como HTML, CSS, JavaScript y frameworks como Spring, Hibernate, AngularJS, React Native; manejadores de contenido como liferay, wordpress, joomla y drupal; desarrollador iOS; conocimientos sólidos en Swift y herramientas como Xcode, Interface Builder y Cocoa Touch; conocimientos avanzados en bases de datos relacionales y no relacionales como MySQL, PSQL, MongoDB, Cassandra etc. y almacenamiento local, así como en la integración de servicios web y redes sociales; además con habilidades en metodologías ágiles y en la gestión de proyectos.</p>
-              
-              <a href="https://www.linkedin.com/in/developerHCode/" class="btn" target="_blank">Leer mas</a>
-            </div>
-
-            <div class="column-2 image">
-              <img src="./img/shapes/points4.png" class="points" alt="" />
-              <img src="./img/about.png" class="z-index" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="records">
-        <div class="overlay overlay-sm">
-          <img src="./img/shapes/square.png" alt="" class="shape square1" />
-          <img src="./img/shapes/square.png" alt="" class="shape square2" />
-          <img src="./img/shapes/circle.png" alt="" class="shape circle" />
-          <img
-            src="./img/shapes/half-circle.png"
-            alt=""
-            class="shape half-circle"
-          />
-          <img src="./img/shapes/wave.png" alt="" class="shape wave wave1" />
-          <img src="./img/shapes/wave.png" alt="" class="shape wave wave2" />
-          <img src="./img/shapes/x.png" alt="" class="shape xshape" />
-          <img src="./img/shapes/triangle.png" alt="" class="shape triangle" />
-        </div>
-
-        <!--div class="container">
-          <div class="wrap">
-            <div class="record-circle">
-              <h2 class="number" data-num="235">20</h2>
-              <h4 class="sub-title">Años de experiencia</h4>
-            </div>
-          </div>
-
-          <div class="wrap">
-            <div class="record-circle active">
-              <h2 class="number" data-num="174">10</h2>
-              <h4 class="sub-title"></h4>
-            </div>
-          </div>
-
-          <div class="wrap">
-            <div class="record-circle">
-              <h2 class="number" data-num="892">1220</h2>
-              <h4 class="sub-title">Work Hour</h4>
-            </div>
-          </div>
-
-          <div class="wrap">
-            <div class="record-circle">
-              <h2 class="number" data-num="368">0</h2>
-              <h4 class="sub-title">Awards</h4>
-            </div>
-          </div>
-        </div-->
-      </section>
-      
-
-      <section class="testimonials section" id="testimonials">
-        <div class="container">
-          <div class="section-header">
-            <h3 class="title" data-title="Algunas cosas creativas en mi">Portafolio</h3>
-          </div>
-
-          <div class="testi-content grid-2">
-            <div class="column-1 reviews">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide review">
-                    <i class="fas fa-quote-left quote"></i>
-                    <div class="rate">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-
-                    <p class="review-text">
-                      por aca podras encontrar algunos de mis proyectos 
-                    </p>
-                    <a href="https://github.com/hecalderong" class="btn" target="_blank">Hecha un vistaso a mi GitHub</a>
-                    
-                  </div>
-                </div>
-
-                  
-
-                <div class="review-nav swiper-button-prev">
-                  <i class="fas fa-long-arrow-alt-left"></i>
-                </div>
-                <div class="review-nav swiper-button-next">
-                  <i class="fas fa-long-arrow-alt-right"></i>
-                </div>
+             <br>              <div class="about__buttons">
+                &nbsp;&nbsp;
+              <a href="https://t.me/hecalderong" class="button button--flex">
+                Hablemos<i class="uil uil-telegram-alt button__icon"></i>
+              </a>&nbsp;&nbsp;<a
+                  download=""
+                  href="https://www.linkedin.com/in/developerHCode/"
+                  class="button button--flex"
+                >
+                  mi CV<i class="uil uil-linkedin-alt button__icon"></i
+                ></a>
               </div>
             </div>
-
-            <div class="column-2 image">
-              <img src="./img/testi.png" alt="" class="img-element" />
-            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="hireme" id="hireme">
-        <div class="container">
-          <h3 class="title"> ¿HABLAMOS?</h3>
-          <p class="text">
-            COMO FREELANCE, MI LUGAR DE TRABAJO ES VARIABLE.<br>  
-            Siempre estoy abierto a discutir el trabajo de diseño prototipado y desarrollo de productos digitales o las oportunidades de asociación.
-          </p>
-          <a href="https://t.me/hecalderong" class="btn" target="_blank">Contactame</a>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Siguiente</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        
+    <!--==================== ABOUT ====================-->
 
-        <div class="bottom-footer">
-          <div class="copyright">
-            <p class="text">
-              Copyright&copy;2020 HC Highlights Coders  
-            </p>
+    <section class="about section" id="about">
+      <h2 class="section__title">Acerca de mi perfil técnico</h2>
+      <span class="section__subtitle">un breve resumen</span>
+
+      <div class="about__container container grid">
+      <div class="skills__container container grid">
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/java-colored.svg"
+            alt="Java"
+          />
+          <div class="skills__container-name">Java</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/heroku-colored.svg"
+            alt="heroku"
+          />
+          <div class="skills__container-name">Heroku</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/c-colored.svg"
+            alt="c"
+          />
+          <div class="skills__container-name">C/++/#</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/php-colored.svg"
+            alt="php"
+          />
+          <div class="skills__container-name">PHP</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/laravel-colored.svg"
+            alt="Laravel"
+          />
+          <div class="skills__container-name">Laravel</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/angular.svg"
+            alt="angular"
+          />
+          <div class="skills__container-name">Angular</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/flutter-colored.svg"
+            alt="Flutter"
+          />
+          <div class="skills__container-name">Flutter</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="/assets/img/skills/react.svg"
+            alt="react"
+          />
+          <div class="skills__container-name">React</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="/assets/img/skills/vue.svg"
+            alt="vue"
+          />
+          <div class="skills__container-name">Vue</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/nodejs-colored.svg"
+            alt="nodejs"
+          />
+          <div class="skills__container-name">NodeJS</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/java-colored.svg"
+            alt="javascript"
+          />
+          <div class="skills__container-name">JavaScript</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="/assets/img/skills/html.svg"
+            alt="html"
+          />
+          <div class="skills__container-name">HTML</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="/assets/img/skills/css.svg"
+            alt="css"
+          />
+          <div class="skills__container-name">CSS</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/bootstrap-colored.svg"
+            alt="bootstrap"
+          />
+          <div class="skills__container-name">bootstrap</div>
+        </div>
+
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="/assets/img/skills/firebase.svg"
+            alt="firebase"
+          />
+          <div class="skills__container-name">Firebase</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/swift-colored.svg"
+            alt="swift"
+          />
+          <div class="skills__container-name">swift</div>
+        </div><div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/kotlin-colored.svg"
+            alt="kotlin"
+          />
+          <div class="skills__container-name">Kotlin</div>
+        </div><div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/dart-colored.svg"
+            alt="Dart"
+          />
+          <div class="skills__container-name">Dart</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/oracle-colored.svg"
+            alt="oracle"
+          />
+          <div class="skills__container-name">ORACLE</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/aws-colored.svg"
+            alt="aws"
+          />
+          <div class="skills__container-name">AWS</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/docker-colored.svg"
+            alt="docker"
+          />
+          <div class="skills__container-name">Docker</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/mysql-colored.svg"
+            alt="mysql"
+          />
+          <div class="skills__container-name">MYSQL</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/postgresql-colored.svg"
+            alt="postgres"
+          />
+          <div class="skills__container-name">Postgres</div>
+        </div>
+        <div class="skills__container-box">
+          <img
+            class="skills__container-img"
+            src="img/mongodb-colored.svg"
+            alt="mongoDB"
+          />
+          <div class="skills__container-name">MongoDB</div>
+        </div>
+
+      </div>
+        <div class="about__data">
+          <p class="about__description">
+            Especialista en Desarrollo de Software, programas, Apps y mantenimiento de sistemas con más de 15 años de experiencia. Conocimiento avanzado en distintos lenguajes de programación. Capacitado para trabajar en todas las etapas del desarrollo de programas. Con iniciativa propia, responsabilidad y liderazgo.
+Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; conocimientos sólidos en tecnologías web como HTML, CSS, JavaScript y frameworks como Spring, Hibernate, AngularJS, React Native; manejadores de contenido como liferay, wordpress, joomla y drupal; desarrollador iOS; conocimientos sólidos en Swift y herramientas como Xcode, Interface Builder y Cocoa Touch; conocimientos avanzados en bases de datos relacionales y no relacionales como MySQL, PSQL, MongoDB, Cassandra etc. y almacenamiento local, así como en la integración de servicios web y redes sociales; además con habilidades en metodologías ágiles y en la gestión de proyectos.
+          </p>
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">15+</span>
+              <span class="about__info-name"
+                >Años de <br />
+                experiencia</span
+              >
+            </div>
+
+            <div>
+              <span class="about__info-title">134+</span>
+              <span class="about__info-name"
+                >Proyectos <br />
+                completados</span
+              >
+            </div>
+
+            <div>
+              <span class="about__info-title">12+</span>
+              <span class="about__info-name"
+                >Apps<br />
+                en tiendas</span
+              >
+            </div>
           </div>
 
-          <div class="followme-wrap">
-            <div class="followme">
-              <h3>Sigueme en: </h3>
-              <span class="footer-line"></span>
-              <div class="social-media">
-                <a href="https://t.me/hecalderong" target="_blank">
-                  <i class="fab fa-telegram"></i>
-                </a>
-                <a href="https://twitter.com/developer_hcode" target="_blank">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://github.com/hecalderong" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/developerHCode/" target="_blank">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
+          <div class="about__buttons">
+            <a
+              download=""
+              href="https://www.linkedin.com/in/developerHCode/"
+              class="button button--flex"
+            >
+              Perfil profesional<i class="uil uil-linkedin-alt button__icon"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== QUALIFICATOIN ====================-->
+
+    <section class="qualification section" class="skills section" id="skills">
+      <h2 class="section__title">Experiencia</h2>
+      <span class="section__subtitle">un breve resumen</span>
+
+      <div class="qualification__container container">
+        <div class="qualification__tabs">
+          <div
+            class="qualification__button button--flex qualification__active"
+            data-target="#work"
+          >
+            <i class="uil uil-briefcase-alt qualification__icon"> </i> Laboral
+          </div>
+
+          <div
+            class="qualification__button button--flex"
+            data-target="#education"
+          >
+            <i class="uil uil-graduation-cap qualification__icon"> </i>
+            Formación
+          </div>
+        </div>
+
+        <div class="qualification__sections">
+          <!--==================== QUALIFICATOIN CONTENT 1====================-->
+          <div
+            class="qualification__content qualification__active"
+            data-content
+            id="work"
+          >
+            <!--==================== QUALIFICATOIN 1====================-->
+            <div class="qualification__data">
+              <div>
+                <img class="skills__container-img" src="img/bitu.jpeg" alt="bitu"/>
+                <h3 class="qualification__title">Lider Tecnico</h3>
+                <span class="qualification__subtitle"> BITU </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> oct-2022-dic2022
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
               </div>
             </div>
 
-            <div class="back-btn-wrap">
-              <a href="#" class="back-btn">
-                <i class="fas fa-chevron-up"></i>
-              </a>
+            <!--==================== QUALIFICATOIN 2====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <img class="skills__container-img" src="img/bitu.jpeg" alt="BITU"/>
+                <h3 class="qualification__title">FullStack Developer</h3>
+                <span class="qualification__subtitle"> BITU </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> abr2022-sep2022
+                </div>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 3====================-->
+            <div class="qualification__data">
+              <div>
+                <img class="skills__container-img" src="img/im.jpeg" alt="imagemaker"/>
+                <h3 class="qualification__title">iOS App Developer</h3>
+                <span class="qualification__subtitle"> Imagemaker </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> may2022-sep2022
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 4====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span> 
+              </div>
+              <div>
+                <img class="skills__container-img" src="img/mindhub.jpeg" alt="mindhub"/>
+                <h3 class="qualification__title">Mentor Senior Java</h3>
+                <span class="qualification__subtitle"> MindHub LA </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> abr2022-agt2022
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATOIN 5====================-->
+            <div class="qualification__data">
+                <div>
+                  <img class="skills__container-img" src="img/valid.jpeg" alt="VALID"/>
+                  <h3 class="qualification__title">iOS Developer</h3>
+                  <span class="qualification__subtitle"> VALID </span>
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i> may2022
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+            </div>
+           <!--==================== QUALIFICATOIN 6====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <!--span class="qualification__line"></span--> 
+              </div>
+              <div>
+                <img class="skills__container-img" src="img/ula.jpeg" alt="ULA"/>
+                <h3 class="qualification__title">Analista de Tecnologias de información</h3>
+                <span class="qualification__subtitle"> Universidad de Los Andes </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> may2004-jun2022
+                </div>
+              </div>
+            </div>
+          </div>         
+
+          <!--==================== QUALIFICATOIN CONTENT 2====================-->
+          <div class="qualification__content" data-content id="education">
+            <!--==================== QUALIFICATOIN 1====================-->
+            <div class="qualification__data">
+              <div>
+                <img class="skills__container-img" src="img/oracle-colored.svg" alt="oracle"/>
+                <h3 class="qualification__title"><a href="https://app.aluracursos.com/degree/certificate/46613e76-00ae-452a-802e-89677315c783" target="_blank">Formación Oracle Cloud Infrastructure - ONE</a></h3>
+                <span class="qualification__subtitle">
+                  Alura Latam
+                </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> ago2023
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 2====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <img class="skills__container-img" src="img/oracle-colored.svg" alt="oracle"/>
+                <h3 class="qualification__title"><a href="https://app.aluracursos.com/program/certificate/1ac68ee8-356e-4d4a-b132-61d6ca1b430a" target="_blank">Oracle Next Education F2 T4 Back-end</a></h3>
+                <span class="qualification__subtitle"> Alura Latam </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> nov2022-may2023
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATOIN 3====================-->
+            <div class="qualification__data">
+              <div>
+                <img class="skills__container-img" src="img/linkedin.jpeg" alt="linkedin"/>
+                <h3 class="qualification__title"><a href="https://www.linkedin.com/learning/certificates/f43c315e74f81e66a3682268ab9ed80ac5b5f7a29741c0052601bc2e9203f596?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BIY6HEC3kQiu%2FJozcGTuqEA%3D%3D" target="_blank">Introducción a las habilidades profesionales en análisis de datos</a></h3>
+                <span class="qualification__subtitle">
+                  LinkedIn
+                </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> feb-2023
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 4====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <img class="skills__container-img" src="img/linkedin.jpeg" alt="LinkedIn"/>
+                <h3 class="qualification__title"><a href="https://www.linkedin.com/learning/certificates/b5f78bc025de09ea9eedc18fae26a0e58bf467f14e7969badbe037cdccf38000?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnDxLTF6JRXunqNvTFEgLOw%3D%3D" target="_blank">Introducción a las habilidades profesionales en el desarrollo de software</a></h3>
+                <span class="qualification__subtitle"> LinkedIn</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> ene-2023
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATOIN 5====================-->
+            <div class="qualification__data">
+              <div>
+                <img class="skills__container-img" src="img/linkedin.jpeg" alt="oracle"/>
+                <h3 class="qualification__title"><a href="https://www.linkedin.com/learning/certificates/43480651d736cc4246c4227410ea119a66e7c2f27f1b7179064ba1d5500ee691?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnDxLTF6JRXunqNvTFEgLOw%3D%3D" target="_blank">GitHub para programadores</a></h3>
+                <span class="qualification__subtitle">
+                  LinkedIn
+                </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> dic-2021
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 6====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <img class="skills__container-img" src="img/ula.jpeg" alt="ULA"/>
+                <h3 class="qualification__title">Diplomado de TTIC</h3>
+                <span class="qualification__subtitle">Universidad de Los Andes</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> ene2010-may2010
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATOIN 7====================-->
+            <div class="qualification__data">
+              <div>
+                <img class="skills__container-img" src="img/oracle-colored.svg" alt="oracle"/>
+                <h3 class="qualification__title">Oracle database 10g</h3>
+                <span class="qualification__subtitle">
+                  Oracle <br>
+                  ID de la credencial 1729004
+                </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> sept-2007
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <!--span class="qualification__line"></span-->
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!--==================== PORTFOLIO ====================-->
+
+    <section class="portfolio section" id="services">
+      <h2 class="section__title">Servicios</h2>
+      <span class="section__subtitle">conoce la información de los distintos servicios.</span>
+
+      <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper">
+          <!--==================== PORTFOLIO 1====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img
+              src="img/portfolio/Pagina-web.d87ca96a0cd9acbeeb45.webp"
+              alt=""
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Página Web para tu Negocio</h3>
+              <p class="portfolio__description">
+                Estás a un paso de tener tu propio sitio web de calidad sin gastar una fortuna. Envíanos tu consulta hoy y descubre cómo podemos ayudarte a tener una presencia en línea que impulse tu negocio al éxito. ¡Estamos listos para trabajar contigo!.
+              </p>
+              <a
+                href="https://t.me/hecalderong"
+                target="_blank"
+                class="button button--flex button--small portfolio__button"
+              >
+                Consultar
+                <i class="uil uil-telegram-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--==================== PORTFOLIO 2====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img
+              src="img/portfolio/Blogs.9fe2a81c3c78dae78953.webp"
+              alt=""
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Sitios Web de Noticias</h3>
+              <p class="portfolio__description">
+                Los sitios web de noticias son plataformas en línea que proporcionan información actualizada sobre una variedad de temas, eventos y noticias globales, regionales o locales. Suelen incluir artículos escritos, imágenes, videos y pueden cubrir temas como política, economía, deportes, entretenimiento y más.
+              </p>
+              <a
+              href="https://t.me/hecalderong"
+              target="_blank"
+              class="button button--flex button--small portfolio__button"
+              >
+                Consultar
+                <i class="uil uil-telegram-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--==================== PORTFOLIO 3====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img
+              src="img/portfolio/Blogsnoticias.4468576c10fb00dd6139.webp"
+              alt=""
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Blogs</h3>
+              <p class="portfolio__description">
+                Los blogs son sitios web personales o profesionales donde los autores publican contenido de manera regular. Este contenido puede incluir opiniones personales, consejos, reseñas, noticias y otros temas de interés. Los blogs suelen ser una forma de expresión personal o profesional en línea.
+              </p>
+              <a
+              href="https://t.me/hecalderong"
+              target="_blank"
+              class="button button--flex button--small portfolio__button"
+              >
+                Consultar
+                <i class="uil uil-telegram-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!--==================== PORTFOLIO 4====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img
+              src="img/portfolio/Páginas-Web-Dinámicas-_Especiales_.3ea630cfa1024417488b.webp"
+              alt=""
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Páginas Web Dinámicas (Especiales)</h3>
+              <p class="portfolio__description">
+                Las páginas web dinámicas son sitios que van más allá de las funciones estándar y pueden tener características especiales o personalizadas. Esto puede incluir aplicaciones interactivas, juegos en línea, herramientas específicas para una industria o cualquier otro tipo de funcionalidad única y avanzada.
+              </p>
+              <a
+              href="https://t.me/hecalderong"
+              target="_blank"
+              class="button button--flex button--small portfolio__button"
+              >
+                Consultar
+                <i class="uil uil-telegram-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--==================== PORTFOLIO 5====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img
+              src="img/portfolio/Sitios_educativos.ef7d97a0c2f302372406.webp"
+              alt=""
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Sitios educativos</h3>
+              <p class="portfolio__description">
+                Los sitios web educativos ofrecen una variedad de recursos y materiales educativos en línea. Pueden incluir cursos en línea, tutoriales, artículos informativos y otros recursos diseñados para el aprendizaje y la formación en diversas materias.
+              </p>
+              <a
+              href="https://t.me/hecalderong"
+              target="_blank"
+              class="button button--flex button--small portfolio__button"
+              >
+                Consultar
+                <i class="uil uil-telegram-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--==================== PORTFOLIO 4====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img
+              src="img/portfolio/Ecommerce.ff51dcfadc29caca19b6.webp"
+              alt=""
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Tiendas Online - Ecommerce</h3>
+              <p class="portfolio__description">
+                Las tiendas en línea, o sitios web de comercio electrónico, permiten a los usuarios comprar productos y servicios en línea. Estos sitios suelen incluir catálogos de productos, opciones de pago seguras y funciones de carrito de compra para facilitar las transacciones en línea.  
+              </p>
+              <a
+              href="https://t.me/hecalderong"
+              target="_blank"
+              class="button button--flex button--small portfolio__button"
+              >
+                Consultar
+                <i class="uil uil-telegram-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+
+          <!--==================== PORTFOLIO 4====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img
+              src="img/portfolio/app-developers.png"
+              alt=""
+              class="portfolio__img"
+            />
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Apps</h3>
+              <p class="portfolio__description">
+                Brindamos Servicios Personalizados de Desarrollo de Aplicaciones Móviles. Diseñamos la aplicación móvil ideal desde cero o renovamos de su aplicación móvil actual con funciones, integraciones y modificaciones personalizables.
+                Somos altamente competentes en el desarrollo de aplicaciones móviles de Android, iOS y Windows personalizadas que incorporan todos sus requisitos comerciales esenciales y personalizados a precios asequibles.
+              </p>
+              <a
+              href="https://t.me/hecalderong"
+              target="_blank"
+              class="button button--flex button--small portfolio__button"
+              >
+                Consultar
+                <i class="uil uil-telegram-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add arrows -->
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--==================== SERVICES ====================-->
+
+    <section class="services section" id="portfolio">
+      <h2 class="section__title">Portafolio</h2>
+      <span class="section__subtitle">algunas cosas creativas de mi</span>
+
+      <div class="services__container container">
+        <div class="services__content">
+          <div>
+            <img class="skills__container-img" src="img/code-icon.png"/>  <img class="skills__container-img" src="img/app-icon.png"/>  <img class="skills__container-img" src="img/design-icon.png"/>
+            <h3 class="services__title">FullStack<br />Developer</h3>
+          </div>
+
+          por aca podras encontrar algunos de mis proyectos
+          <span
+            class="button button--flex button--small button--link services__button"
+          >
+            Ver Mas
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content"><a href="https://github.com/hecalderong" target="_blank">
+              <img class="home__img" src="img/github-cover.jpg"/></a>
+              <i class="uil uil-times services__modal-close"></i>
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  
+                  <p><a href="https://github.com/hecalderong" target="_blank">
+                    hecha un vistaso a mi GitHub<i class="uil uil-github-alt project__icon button__icon"></i></a></p>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!--==================== PROJECT IN MIND ====================-->
+
+    <section class="contact section" id="contact">
+      <div class="project__bg">
+        <div class="project__container container grid">
+          <div class="project__data">
+            <h2 class="project__title">¿Tienes un nuevo proyecto?</h2>
+            <p class="project__description">
+              Me encantaría charlar contigo sobre tu proyecto y ver cómo podemos trabajar juntos para crear algo realmente sorprendente.
+            </p>
+            <a href="https://t.me/hecalderong" class="button button--flex button--white">
+              Conectemos.
+              <i class="uil uil-telegram-alt project__icon button__icon"></i>
+            </a>
+            </div>
+
+          <img src="img/about.png" alt="" class="project__img" />
+        </div>
+      </div>
+    </section>
+ 
+    <!--==================== FOOTER ====================-->
+
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Hugo Calderón</h1>
+            <span class="footer__subtitle">Desarrollador Senior FullStack </span>
+          </div>
+
+          <ul class="footer__links">
+          
+            <li>
+              <a href="#services" class="footer__link">Servicios</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contactame</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+         
+            <a
+              href="https://www.linkedin.com/in/developerHCode/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a
+              href="https://github.com/hecalderong"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-github-alt"></i>
+            </a>
+
+            <a
+              href="https://t.me/hecalderong"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-telegram-alt"></i>
+            </a>
+
+            <a
+              href="https://twitter.com/developer_hcode"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-twitter-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">&#169; Copyright&copy;2023 HC Highlights Coders  </p>
+      </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/isotope.pkgd.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/app.js"></script>
+    <!--==================== SCROLL TOP ====================-->
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ===================== SHOW/HIDE LOADER ==================== -->
+    <script>
+      window.onload = function () {
+        document.getElementById("loading").style.display = "none";
+      };
+    </script>
+
+    <!-- =====================REGISTER SERVICE WORKER================ -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("/serviceWorker.js")
+            .then((res) => console.log("service worker registered"))
+            .catch((err) => console.log("service worker not registered", err));
+        });
+      }
+    </script>
   </body>
 </html>
