@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Disallow: /*.git$
+Disallow: /*.sql$
+Disallow: /*.tgz$
+Disallow: /*.gz$
+Disallow: /*.tar$
+Disallow: /*.svn$
+Disallow: /*.bz2$
+Disallow: /*.log$
+
+Sitemap: https://hecalderong.github.io/hecalderong/sitemap.xml
