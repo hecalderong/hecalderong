@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Sitio web del portafolio de Hugo Calderón HC. Un resumen de la experiencia profesional,
-      habilidades, detalles de proyectos e información de contacto."
+      content="Portafolio de Hugo Calderón, Desarrollador Senior FullStack con 20+ años de experiencia en Java, iOS, NodeJS, AWS y más. Arquitectura, consultoría y desarrollo de software."
     />
-    <title>Hugo Calderón HC Portafolio Website</title>
-
+    <title>Hugo Calderón | Desarrollador FullStack Senior</title>
+    <meta property="og:url" content="https://hecalderong.github.io/hecalderong/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_LA" />
+    <link rel="canonical" href="https://hecalderong.github.io/hecalderong/" />
     <!--==================== OPEN GRAPH META TAGS ===================== -->
-    <meta property="og:title" content="Hugo Calderón HC Portafolio Website" />
-    <meta property="og:image" content="assets/img/PwaImages/ios/512.png" />
+    <meta property="og:title" content="Hugo Calderón | Desarrollador FullStack Senior" />
+    <meta property="og:image" content="https://hecalderong.github.io/hecalderong/assets/img/PwaImages/ios/512.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
     <meta
       property="og:description"
-      content="Sitio web del portafolio de Hugo Calderón HC. Un resumen de la experiencia profesional,
-      habilidades, detalles de proyectos e información de contacto."
+      content="Portafolio de Hugo Calderón, Desarrollador Senior FullStack con 20+ años de experiencia en Java, iOS, NodeJS, AWS y más. Arquitectura, consultoría y desarrollo de software."
     />
 
     <!--==================== TWITTER META TAGS ===================== -->
-    <meta name="twitter:title" content="Hugo Calderón HC Portafolio Website" />
+    <meta name="twitter:title" content="Hugo Calderón | Desarrollador FullStack Senior" />
     <meta
       name="twitter:description"
-      content="Sitio web del portafolio de Hugo Calderón HC. Un resumen de la experiencia profesional,
-      habilidades, detalles de proyectos e información de contacto."
+      content="Portafolio de Hugo Calderón, Desarrollador Senior FullStack con 20+ años de experiencia en Java, iOS, NodeJS, AWS y más. Arquitectura, consultoría y desarrollo de software."
     />
-    <meta name="twitter:image" content="assets/img/PwaImages/ios/512.png" />
+    <meta name="twitter:image" content="https://hecalderong.github.io/hecalderong/assets/img/PwaImages/ios/512.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@developer_hcode" />
 
     <!--==================== UNICONS ====================-->
+    <link rel="preconnect" href="https://unicons.iconscout.com" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -75,9 +80,22 @@
 
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Hugo Enrique Calderón",
+        "url": "https://hecalderong.github.io/hecalderong/",
+        "jobTitle": "Desarrollador Senior FullStack",
+        "sameAs": [
+        "https://www.linkedin.com/in/developerHCode/",
+        "https://github.com/hecalderong"
+      ]
+      }
+    </script>
   </head>
 
   <body>
@@ -153,21 +171,21 @@
             <div class="home__social">
               <a
                 href="https://www.linkedin.com/in/developerHCode/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 class="home__social-icon"
               >
                 <i class="uil uil-linkedin-alt"></i>
               </a>
               <a
                 href="https://github.com/hecalderong/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 class="home__social-icon"
               >
                 <i class="uil uil-github-alt"></i>
               </a>
               <a
                 href="https://t.me/hecalderong"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 class="home__social-icon"
               >
                 <i class="uil uil-telegram-alt"></i>
@@ -179,7 +197,6 @@
                 class="home__blob"
                 viewBox="0 0 200 187"
                 xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
               >
                 <mask id="mask0" mask-type="alpha">
                   <path
@@ -200,7 +217,7 @@
                     class="home__blob-img"
                     y="-20"
                     x="-20"
-                    xlink:href="img/person.png"
+                    href="img/person.png"
                     alt="Hugo Enrique Calderon"
                   ></image>
                 </g>
@@ -216,13 +233,12 @@
               </p>
              <br>              <div class="about__buttons">
                 &nbsp;&nbsp;
-              <a href="https://t.me/hecalderong" class="button button--flex" target="_blank">
+              <a href="https://t.me/hecalderong" class="button button--flex" target="_blank" rel="noopener noreferrer">
                 Hablemos<i class="uil uil-telegram-alt button__icon"></i>
               </a>&nbsp;&nbsp;<a
                   download=""
                   href="https://www.linkedin.com/in/developerHCode/"
-                  class="button button--flex" target="_blank"
-                >
+                  class="button button--flex" target="_blank" rel="noopener noreferrer">
                   mi CV<i class="uil uil-linkedin-alt button__icon"></i
                 ></a>
               </div>
@@ -237,7 +253,7 @@
           </div>
         </div>
       </section>
-    </main>
+    
 
     <!--==================== ABOUT ====================-->
 
@@ -251,7 +267,7 @@
           <img
             class="skills__container-img"
             src="img/java-colored.svg"
-            alt="Java"
+            alt="Java" width="48" height="48"
           />
           <div class="skills__container-name">Java</div>
         </div>
@@ -259,23 +275,15 @@
           <img
             class="skills__container-img"
             src="img/heroku-colored.svg"
-            alt="heroku"
+            alt="heroku" width="48" height="48"
           />
           <div class="skills__container-name">Heroku</div>
         </div>
         <div class="skills__container-box">
           <img
             class="skills__container-img"
-            src="img/c-colored.svg"
-            alt="c"
-          />
-          <div class="skills__container-name">C/++/#</div>
-        </div>
-        <div class="skills__container-box">
-          <img
-            class="skills__container-img"
             src="img/php-colored.svg"
-            alt="php"
+            alt="php" width="48" height="48"
           />
           <div class="skills__container-name">PHP</div>
         </div>
@@ -283,7 +291,7 @@
           <img
             class="skills__container-img"
             src="img/laravel-colored.svg"
-            alt="Laravel"
+            alt="Laravel" width="48" height="48" 
           />
           <div class="skills__container-name">Laravel</div>
         </div>
@@ -291,7 +299,7 @@
           <img
             class="skills__container-img"
             src="img/angular.svg"
-            alt="angular"
+            alt="angular" width="48" height="48"
           />
           <div class="skills__container-name">Angular</div>
         </div>
@@ -299,7 +307,7 @@
           <img
             class="skills__container-img"
             src="img/flutter-colored.svg"
-            alt="Flutter"
+            alt="Flutter" width="48" height="48"
           />
           <div class="skills__container-name">Flutter</div>
         </div>
@@ -308,7 +316,7 @@
           <img
             class="skills__container-img"
             src="img/react-colored.svg"
-            alt="react"
+            alt="react" width="48" height="48"
           />
           <div class="skills__container-name">React</div>
         </div>
@@ -317,7 +325,7 @@
           <img
             class="skills__container-img"
             src="img/vuejs-colored.svg"
-            alt="vue"
+            alt="vue" width="48" height="48"
           />
           <div class="skills__container-name">Vue</div>
         </div>
@@ -326,7 +334,7 @@
           <img
             class="skills__container-img"
             src="img/nodejs-colored.svg"
-            alt="nodejs"
+            alt="nodejs" width="48" height="48"
           />
           <div class="skills__container-name">NodeJS</div>
         </div>
@@ -334,17 +342,8 @@
         <div class="skills__container-box">
           <img
             class="skills__container-img"
-            src="img/java-colored.svg"
-            alt="javascript"
-          />
-          <div class="skills__container-name">JavaScript</div>
-        </div>
-
-        <div class="skills__container-box">
-          <img
-            class="skills__container-img"
             src="img/html5-colored.svg"
-            alt="html"
+            alt="html" width="48" height="48"
           />
           <div class="skills__container-name">HTML</div>
         </div>
@@ -353,7 +352,7 @@
           <img
             class="skills__container-img"
             src="img/css3-colored.svg"
-            alt="css"
+            alt="css" width="48" height="48"
           />
           <div class="skills__container-name">CSS</div>
         </div>
@@ -362,7 +361,7 @@
           <img
             class="skills__container-img"
             src="img/bootstrap-colored.svg"
-            alt="bootstrap"
+            alt="bootstrap" width="48" height="48"
           />
           <div class="skills__container-name">bootstrap</div>
         </div>
@@ -371,7 +370,7 @@
           <img
             class="skills__container-img"
             src="img/firebase-colored.svg"
-            alt="firebase"
+            alt="firebase" width="48" height="48"
           />
           <div class="skills__container-name">Firebase</div>
         </div>
@@ -379,21 +378,21 @@
           <img
             class="skills__container-img"
             src="img/swift-colored.svg"
-            alt="swift"
+            alt="swift" width="48" height="48"
           />
           <div class="skills__container-name">swift</div>
         </div><div class="skills__container-box">
           <img
             class="skills__container-img"
             src="img/kotlin-colored.svg"
-            alt="kotlin"
+            alt="kotlin" width="48" height="48"
           />
           <div class="skills__container-name">Kotlin</div>
         </div><div class="skills__container-box">
           <img
             class="skills__container-img"
             src="img/dart-colored.svg"
-            alt="Dart"
+            alt="Dart" width="48" height="48"
           />
           <div class="skills__container-name">Dart</div>
         </div>
@@ -401,7 +400,7 @@
           <img
             class="skills__container-img"
             src="img/oracle-colored.svg"
-            alt="oracle"
+            alt="oracle" width="48" height="48"
           />
           <div class="skills__container-name">ORACLE</div>
         </div>
@@ -409,7 +408,7 @@
           <img
             class="skills__container-img"
             src="img/aws-colored.svg"
-            alt="aws"
+            alt="aws" width="48" height="48"
           />
           <div class="skills__container-name">AWS</div>
         </div>
@@ -417,7 +416,7 @@
           <img
             class="skills__container-img"
             src="img/docker-colored.svg"
-            alt="docker"
+            alt="docker" width="48" height="48"
           />
           <div class="skills__container-name">Docker</div>
         </div>
@@ -425,7 +424,7 @@
           <img
             class="skills__container-img"
             src="img/mysql-colored.svg"
-            alt="mysql"
+            alt="mysql" width="48" height="48"
           />
           <div class="skills__container-name">MYSQL</div>
         </div>
@@ -433,7 +432,7 @@
           <img
             class="skills__container-img"
             src="img/postgresql-colored.svg"
-            alt="postgres"
+            alt="postgres" width="48" height="48"
           />
           <div class="skills__container-name">Postgres</div>
         </div>
@@ -441,7 +440,7 @@
           <img
             class="skills__container-img"
             src="img/mongodb-colored.svg"
-            alt="mongoDB"
+            alt="mongoDB" width="48" height="48"
           />
           <div class="skills__container-name">MongoDB</div>
         </div>
@@ -449,12 +448,12 @@
       </div>
         <div class="about__data">
           <p class="about__description">
-            Desarrollador de Software, programas, Apps y mantenimiento de sistemas con más de 15 años de experiencia. Conocimiento avanzado en distintos lenguajes de programación. Capacitado para trabajar en todas las etapas del desarrollo de programas. Con iniciativa propia, responsabilidad y liderazgo.
+            Desarrollador de Software, programas, Apps y mantenimiento de sistemas con más de 20 años de experiencia. Conocimiento avanzado en distintos lenguajes de programación. Capacitado para trabajar en todas las etapas del desarrollo de programas. Con iniciativa propia, responsabilidad y liderazgo.
 Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; conocimientos sólidos en tecnologías web como HTML, CSS, JavaScript y frameworks como Spring, Hibernate, AngularJS, React Native; manejadores de contenido como liferay, wordpress, joomla y drupal; desarrollador iOS; conocimientos sólidos en Swift y herramientas como Xcode, Interface Builder y Cocoa Touch; conocimientos avanzados en bases de datos relacionales y no relacionales como MySQL, PSQL, MongoDB, Cassandra etc. y almacenamiento local, así como en la integración de servicios web y redes sociales; además con habilidades en metodologías ágiles y en la gestión de proyectos.
           </p>
           <div class="about__info">
             <div>
-              <span class="about__info-title">15+</span>
+              <span class="about__info-title">20+</span>
               <span class="about__info-name"
                 >Años de <br />
                 experiencia</span
@@ -482,8 +481,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
             <a
               download=""
               href="https://www.linkedin.com/in/developerHCode/"
-              class="button button--flex" target="_blank"
-            >
+              class="button button--flex" target="_blank" rel="noopener noreferrer">
               Perfil profesional<i class="uil uil-linkedin-alt button__icon"></i
             ></a>
           </div>
@@ -493,7 +491,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
 
     <!--==================== QUALIFICATOIN ====================-->
 
-    <section class="qualification section" class="skills section" id="skills">
+    <section class="qualification section" id="skills">
       <h2 class="section__title">Experiencia</h2>
       <span class="section__subtitle">un breve resumen</span>
 
@@ -525,7 +523,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
             <!--==================== QUALIFICATOIN 1====================-->
             <div class="qualification__data">
               <div>
-                <img class="skills__container-img" src="img/bitu.jpeg" alt="bitu"/>
+                <img class="skills__container-img" src="img/bitu.jpeg" alt="bitu" width="48" height="48"/>
                 <h3 class="qualification__title">Líder Técnico</h3>
                 <span class="qualification__subtitle"> BITU </span>
                 <div class="qualification__calender">
@@ -546,7 +544,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
                 <span class="qualification__line"></span>
               </div>
               <div>
-                <img class="skills__container-img" src="img/bitu.jpeg" alt="BITU"/>
+                <img class="skills__container-img" src="img/bitu.jpeg" alt="BITU" width="48" height="48"/>
                 <h3 class="qualification__title">FullStack Developer</h3>
                 <span class="qualification__subtitle"> BITU </span>
                 <div class="qualification__calender">
@@ -558,7 +556,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
             <!--==================== QUALIFICATOIN 3====================-->
             <div class="qualification__data">
               <div>
-                <img class="skills__container-img" src="img/im.jpeg" alt="imagemaker"/>
+                <img class="skills__container-img" src="img/im.jpeg" alt="imagemaker" width="48" height="48"/>
                 <h3 class="qualification__title">iOS App Developer</h3>
                 <span class="qualification__subtitle"> Imagemaker </span>
                 <div class="qualification__calender">
@@ -579,7 +577,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
                 <span class="qualification__line"></span> 
               </div>
               <div>
-                <img class="skills__container-img" src="img/mindhub.jpeg" alt="mindhub"/>
+                <img class="skills__container-img" src="img/mindhub.jpeg" alt="mindhub" width="48" height="48"/>
                 <h3 class="qualification__title">Mentor Senior Java</h3>
                 <span class="qualification__subtitle"> MindHub LA </span>
                 <div class="qualification__calender">
@@ -590,7 +588,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
             <!--==================== QUALIFICATOIN 5====================-->
             <div class="qualification__data">
                 <div>
-                  <img class="skills__container-img" src="img/valid.jpeg" alt="VALID"/>
+                  <img class="skills__container-img" src="img/valid.jpeg" alt="VALID" width="48" height="48"/>
                   <h3 class="qualification__title">iOS Developer</h3>
                   <span class="qualification__subtitle"> VALID </span>
                   <div class="qualification__calender">
@@ -610,7 +608,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
                 <!--span class="qualification__line"></span--> 
               </div>
               <div>
-                <img class="skills__container-img" src="img/ula.jpeg" alt="ULA"/>
+                <img class="skills__container-img" src="img/ula.jpeg" alt="ULA" width="48" height="48"/>
                 <h3 class="qualification__title">Analista de Tecnologias de información</h3>
                 <span class="qualification__subtitle"> Universidad de Los Andes </span>
                 <div class="qualification__calender">
@@ -622,11 +620,11 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
 
           <!--==================== QUALIFICATOIN CONTENT 2====================-->
           <div class="qualification__content" data-content id="education">
-            <!--==================== QUALIFICATOIN 1====================-->
+            <!--==================== QUALIFICATOIN 1====================>
             <div class="qualification__data">
               <div>
                 <img class="skills__container-img" src="img/oracle-colored.svg" alt="oracle"/>
-                <h3 class="qualification__title"><a href="https://app.aluracursos.com/degree/certificate/46613e76-00ae-452a-802e-89677315c783" target="_blank">Formación Oracle Cloud Infrastructure - ONE</a></h3>
+                <h3 class="qualification__title"><a href="https://app.aluracursos.com/degree/certificate/46613e76-00ae-452a-802e-89677315c783" target="_blank" rel="noopener noreferrer">Formación Oracle Cloud Infrastructure - ONE</a></h3>
                 <span class="qualification__subtitle">
                   Alura Latam
                 </span>
@@ -638,9 +636,9 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
                 <span class="qualification__rounder"></span>
                 <span class="qualification__line"></span>
               </div>
-            </div>
+            </div-->
 
-            <!--==================== QUALIFICATOIN 2====================-->
+            <!--==================== QUALIFICATOIN 2====================>
             <div class="qualification__data">
               <div></div>
               <div>
@@ -649,23 +647,23 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
               </div>
               <div>
                 <img class="skills__container-img" src="img/oracle-colored.svg" alt="oracle"/>
-                <h3 class="qualification__title"><a href="https://app.aluracursos.com/program/certificate/1ac68ee8-356e-4d4a-b132-61d6ca1b430a" target="_blank">Oracle Next Education F2 T4 Back-end</a></h3>
+                <h3 class="qualification__title"><a href="https://app.aluracursos.com/program/certificate/1ac68ee8-356e-4d4a-b132-61d6ca1b430a" target="_blank" rel="noopener noreferrer">Oracle Next Education F2 T4 Back-end</a></h3>
                 <span class="qualification__subtitle"> Alura Latam </span>
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i> nov2022-may2023
                 </div>
               </div>
             </div>
-            <!--==================== QUALIFICATOIN 3====================-->
+            <==================== QUALIFICATOIN 3====================-->
             <div class="qualification__data">
               <div>
                 <img class="skills__container-img" src="img/linkedin.jpeg" alt="linkedin"/>
-                <h3 class="qualification__title"><a href="https://www.linkedin.com/learning/certificates/f43c315e74f81e66a3682268ab9ed80ac5b5f7a29741c0052601bc2e9203f596?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BIY6HEC3kQiu%2FJozcGTuqEA%3D%3D" target="_blank">Introducción a las habilidades profesionales en análisis de datos</a></h3>
+                <h3 class="qualification__title"><a href="https://www.linkedin.com/in/developerhcode/details/certifications/" target="_blank" rel="noopener noreferrer">Resumen de certificaciones en perfil</a></h3>
                 <span class="qualification__subtitle">
                   LinkedIn
                 </span>
                 <div class="qualification__calender">
-                  <i class="uil uil-calendar-alt"></i> feb-2023
+                  <i class="uil uil-calendar-alt"></i> 2007-2026
                 </div>
               </div>
               <div>
@@ -674,7 +672,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
               </div>
             </div>
 
-            <!--==================== QUALIFICATOIN 4====================-->
+            <!--==================== QUALIFICATOIN 4====================>
             <div class="qualification__data">
               <div></div>
               <div>
@@ -683,18 +681,18 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
               </div>
               <div>
                 <img class="skills__container-img" src="img/linkedin.jpeg" alt="LinkedIn"/>
-                <h3 class="qualification__title"><a href="https://www.linkedin.com/learning/certificates/b5f78bc025de09ea9eedc18fae26a0e58bf467f14e7969badbe037cdccf38000?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnDxLTF6JRXunqNvTFEgLOw%3D%3D" target="_blank">Introducción a las habilidades profesionales en el desarrollo de software</a></h3>
+                <h3 class="qualification__title"><a href="https://www.linkedin.com/learning/certificates/b5f78bc025de09ea9eedc18fae26a0e58bf467f14e7969badbe037cdccf38000?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnDxLTF6JRXunqNvTFEgLOw%3D%3D" target="_blank" rel="noopener noreferrer">Introducción a las habilidades profesionales en el desarrollo de software</a></h3>
                 <span class="qualification__subtitle"> LinkedIn</span>
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i> ene-2023
                 </div>
               </div>
             </div>
-            <!--==================== QUALIFICATOIN 5====================-->
+            <==================== QUALIFICATOIN 5====================>
             <div class="qualification__data">
               <div>
-                <img class="skills__container-img" src="img/linkedin.jpeg" alt="oracle"/>
-                <h3 class="qualification__title"><a href="https://www.linkedin.com/learning/certificates/43480651d736cc4246c4227410ea119a66e7c2f27f1b7179064ba1d5500ee691?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnDxLTF6JRXunqNvTFEgLOw%3D%3D" target="_blank">GitHub para programadores</a></h3>
+                <img class="skills__container-img" src="img/linkedin.jpeg" alt="LinkedIn"/>
+                <h3 class="qualification__title"><a href="https://www.linkedin.com/learning/certificates/43480651d736cc4246c4227410ea119a66e7c2f27f1b7179064ba1d5500ee691?trk=backfilled_certificate&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BnDxLTF6JRXunqNvTFEgLOw%3D%3D" target="_blank" rel="noopener noreferrer">GitHub para programadores</a></h3>
                 <span class="qualification__subtitle">
                   LinkedIn
                 </span>
@@ -708,7 +706,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
               </div>
             </div>
 
-            <!--==================== QUALIFICATOIN 6====================-->
+            <==================== QUALIFICATOIN 6====================>
             <div class="qualification__data">
               <div></div>
               <div>
@@ -724,7 +722,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
                 </div>
               </div>
             </div>
-            <!--==================== QUALIFICATOIN 7====================-->
+            <==================== QUALIFICATOIN 7====================>
             <div class="qualification__data">
               <div>
                 <img class="skills__container-img" src="img/oracle-colored.svg" alt="oracle"/>
@@ -739,7 +737,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
               </div>
               <div>
                 <span class="qualification__rounder"></span>
-                <!--span class="qualification__line"></span-->
+                <span class="qualification__line"></span-->
               </div>
             </div>
           </div>
@@ -768,7 +766,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
               </p>
               <a
                 href="https://t.me/hecalderong"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 class="button button--flex button--small portfolio__button"
               >
                 Consultar
@@ -791,7 +789,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
               </p>
               <a
               href="https://t.me/hecalderong"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="button button--flex button--small portfolio__button"
               >
                 Consultar
@@ -814,7 +812,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
               </p>
               <a
               href="https://t.me/hecalderong"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="button button--flex button--small portfolio__button"
               >
                 Consultar
@@ -836,7 +834,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
               </p>
               <a
               href="https://t.me/hecalderong"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="button button--flex button--small portfolio__button"
               >
                 Consultar
@@ -859,7 +857,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
               </p>
               <a
               href="https://t.me/hecalderong"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="button button--flex button--small portfolio__button"
               >
                 Consultar
@@ -882,7 +880,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
               </p>
               <a
               href="https://t.me/hecalderong"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="button button--flex button--small portfolio__button"
               >
                 Consultar
@@ -907,7 +905,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
               </p>
               <a
               href="https://t.me/hecalderong"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="button button--flex button--small portfolio__button"
               >
                 Consultar
@@ -952,15 +950,15 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
           </span>
 
           <div class="services__modal">
-            <div class="services__modal-content"><a href="https://github.com/hecalderong" target="_blank">
+            <div class="services__modal-content"><a href="https://github.com/hecalderong" target="_blank" rel="noopener noreferrer">
               <img class="home__img" src="img/github-cover.jpg"/ alt="Github"></a>
               <i class="uil uil-times services__modal-close"></i>
               <ul class="services__modal-services grid">
                 <li class="services__modal-service">
                   
-                  <p><a href="https://github.com/hecalderong" target="_blank">
+                  <p><a href="https://github.com/hecalderong" target="_blank" rel="noopener noreferrer">
                     hecha un vistaso a mi GitHub<i class="uil uil-github-alt project__icon button__icon"></i></a></p>
-              
+                </li>
               </ul>
             </div>
           </div>
@@ -977,7 +975,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
             <p class="project__description">
               Me encantaría charlar contigo sobre tu proyecto y ver cómo podemos trabajar juntos para crear algo realmente sorprendente.
             </p>
-            <a href="https://t.me/hecalderong" class="button button--flex button--white">
+            <a href="https://t.me/hecalderong" class="button button--flex button--white" target="_blank" rel="noopener noreferrer">
               Conectemos.
               <i class="uil uil-telegram-alt project__icon button__icon"></i>
             </a>
@@ -987,7 +985,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
         </div>
       </div>
     </section>
- 
+    </main>
     <!--==================== FOOTER ====================-->
 
     <footer class="footer">
@@ -1011,28 +1009,28 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
           <div class="footer__socials">
             <a
               href="https://www.linkedin.com/in/developerHCode/"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="footer__social"
             >
               <i class="uil uil-linkedin-alt"></i>
             </a>
             <a
               href="https://github.com/hecalderong"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="footer__social"
             >
               <i class="uil uil-github-alt"></i>
             </a>
             <a
               href="https://t.me/hecalderong"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="footer__social"
             >
               <i class="uil uil-telegram-alt"></i>
             </a>
             <!--a
               href="https://x.com/developer_hcode"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="footer__social"
             >
               <i class="uil uil-x"></i>
@@ -1040,7 +1038,7 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
           </div>
         </div>
 
-        <p class="footer__copy">&#169; Copyright&copy;2020 <a href="https://highlightscoders.github.io/highlightscoders/" target="_blank"> HC Highlights Coders </a> </p>
+        <p class="footer__copy">&#169; Copyright&copy;2026 <a href="https://highlightscoders.github.io/highlightscoders/" target="_blank" rel="noopener noreferrer"> HC Highlights Coders </a> </p>
       </div>
     </footer>
 
@@ -1074,5 +1072,6 @@ Experto en desarrollo de aplicaciones web, de escritorio y móviles en Java; con
         });
       }
     </script>
+    
   </body>
 </html>
